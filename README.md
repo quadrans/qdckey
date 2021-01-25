@@ -1,11 +1,10 @@
 # qdckey (previously ethkey)
 
-A Quadrans wallet or an Ethereum wallet consist of a _public address_ and a _private key_.
-When running the [gqdc](https://docs.quadrans.io/nodes/) Quadrans node or [geth](https://geth.ethereum.org/downloads/)
-Ethereum node the wallet information is stored in a [keystore](https://medium.com/@julien.maffre/what-is-an-ethereum-keystore-file-86c8c5917b97) file.
+A Quadrans wallet consists of a _public address_ and a _private key_.
+When running the [gqdc](https://docs.quadrans.io/nodes/) Quadrans node the wallet information is stored in a [keystore](https://medium.com/@julien.maffre/what-is-an-ethereum-keystore-file-86c8c5917b97) file.
 In this file the private key is encrypted using the wallet's password.
 
-The _ethkey_ tool reads the keystore file and extracts the decrypted private key and the
+The _qdckey_ tool reads the keystore file and extracts the decrypted private key and the
 [checksum encoded](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-55.md) public wallet address.
 It is also possible to generate QR code images of the key and the address.
 
@@ -15,10 +14,10 @@ It is also possible to generate QR code images of the key and the address.
 
 ## Usage
 ```
-python ethkey.py [-h] [--password PASSWORD] [--address_qr ADDRESS_QR] [--private_key_qr PRIVATE_KEY_QR] keystore_file
+python qdckey.py [-h] [--password PASSWORD] [--address_qr ADDRESS_QR] [--private_key_qr PRIVATE_KEY_QR] keystore_file
 
 positional arguments:
-  keystore_file                     path to the Ethereum keystore file.
+  keystore_file                     path to the Quadrans keystore file.
 
 optional arguments:
   -h, --help                        show this help message and exit
@@ -32,9 +31,9 @@ If the image name parameters are provided, QR code images are generated for the 
 
 An example call would look like this:
 ```
-python ethkey.py /home/quadrans/.quadrans/keystore/UTC--2016-02-29T20-16-53.925667321Z--0af977bb21cf972a538187f72299614121549454 \
+python qdckey.py /home/quadrans/.quadrans/keystore/UTC--2016-02-29T20-16-53.925667321Z--0af977bb21cf972a538187f72299614121549454 \
   --address_qr=address.png \
   --private_key_qr=key.png
 ``` 
 
-Project based on a form of [ethkey](https://github.com/owahlen/ethkey) for Ethereum blockchain
+Project based on a fork of [ethkey](https://github.com/owahlen/ethkey) for Ethereum blockchain
