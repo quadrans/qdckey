@@ -10,7 +10,7 @@ class DecrypterTest(unittest.TestCase):
     json_string = """
         {  
            "address":"7e5f4552091a69125d5dfcb7b8c2659029395bdf",
-           "Crypto":{  
+           "crypto":{  
               "cipher":"aes-128-ctr",
               "ciphertext":"f97975cb858242372a7c910de23976be4f545ad6b4d6ddb86e54b7d9b3b1c6a1",
               "cipherparams":{  
