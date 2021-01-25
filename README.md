@@ -1,10 +1,8 @@
 # ethkey
 
-An Ethereum wallet consists of a _public address_ and a _private key_.
-When using the [Ethereum Wallet / Mist Browser](https://github.com/ethereum/mist/releases)
-or when running the [geth](https://geth.ethereum.org/downloads/)
-Ethereum node the wallet information is stored in a
-[keystore](https://medium.com/@julien.maffre/what-is-an-ethereum-keystore-file-86c8c5917b97) file.
+A Quadrans wallet or an Ethereum wallet consist of a _public address_ and a _private key_.
+When running the [gqdc](https://docs.quadrans.io/nodes/) Quadrans node or [geth](https://geth.ethereum.org/downloads/)
+Ethereum node the wallet information is stored in a [keystore](https://medium.com/@julien.maffre/what-is-an-ethereum-keystore-file-86c8c5917b97) file.
 In this file the private key is encrypted using the wallet's password.
 
 The _ethkey_ tool reads the keystore file and extracts the decrypted private key and the
@@ -34,7 +32,9 @@ If the image name parameters are provided, QR code images are generated for the 
 
 An example call would look like this:
 ```
-python ethkey.py ~/Library/Ethereum/keystore/UTC--2016-02-29T20-16-53.925667321Z--0af977bb21cf972a538187f72299614121549454 \
+python ethkey.py /home/quadrans/.quadrans/keystore/UTC--2016-02-29T20-16-53.925667321Z--0af977bb21cf972a538187f72299614121549454 \
   --address_qr=address.png \
   --private_key_qr=key.png
 ``` 
+
+Project based on a form of [ethkey](https://github.com/owahlen/ethkey)
