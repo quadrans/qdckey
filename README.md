@@ -1,4 +1,4 @@
-# ethkey
+# qdckey (previously ethkey)
 
 A Quadrans wallet or an Ethereum wallet consist of a _public address_ and a _private key_.
 When running the [gqdc](https://docs.quadrans.io/nodes/) Quadrans node or [geth](https://geth.ethereum.org/downloads/)
@@ -37,4 +37,4 @@ python ethkey.py /home/quadrans/.quadrans/keystore/UTC--2016-02-29T20-16-53.9256
   --private_key_qr=key.png
 ``` 
 
-Project based on a form of [ethkey](https://github.com/owahlen/ethkey)
+Project based on a form of [ethkey](https://github.com/owahlen/ethkey) for Ethereum blockchain
