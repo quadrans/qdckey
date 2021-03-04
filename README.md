@@ -1,6 +1,6 @@
 # qdckey (previously ethkey)
 
-A Quadrans wallet consists of a _public address_ and a _private key_.
+A [Quadrans](https://github.com/quadrans) wallet consists of a _public address_ and a _private key_.
 When running the [gqdc](https://docs.quadrans.io/nodes/) Quadrans node the wallet information is stored in a [keystore](https://medium.com/@julien.maffre/what-is-an-ethereum-keystore-file-86c8c5917b97) file.
 In this file the private key is encrypted using the wallet's password.
 
@@ -36,4 +36,7 @@ python qdckey.py /home/quadrans/.quadrans/keystore/UTC--2016-02-29T20-16-53.9256
   --private_key_qr=key.png
 ``` 
 
-Project based on a fork of [ethkey](https://github.com/owahlen/ethkey) for Ethereum blockchain
+## Links
+* [Quadrans Foundation website](https://quadrans.io)
+* [Quadrans Documentation](https://docs.quadrans.io)
+* [Original ethkey](https://github.com/owahlen/ethkey)
