@@ -10,6 +10,7 @@ It is also possible to generate QR code images of the key and the address.
 
 ## Installation Requirements
 * [python 3.x](https://realpython.com/installing-python) must be installed
+* `libssl-dev` package installed for your distribution
 * relevant python packes must be installed using `pip install -r requirements.txt`
 
 ## Usage
