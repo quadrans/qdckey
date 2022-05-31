@@ -42,6 +42,6 @@ python qdckey.py /home/quadrans/.quadrans/keystore/UTC--2016-02-29T20-16-53.9256
 ``` 
 
 ## Links
-* [Quadrans Foundation website](https://quadrans.io)
+* [Quadrans Blockchain website](https://quadrans.io)
 * [Quadrans Documentation](https://docs.quadrans.io)
 * [Original ethkey](https://github.com/owahlen/ethkey)
